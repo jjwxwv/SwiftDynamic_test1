@@ -15,18 +15,14 @@ function ShapeList({
   return (
     <Flex vertical gap="middle">
       <Flex align="middle" justify={isActive ? "end" : "center"} gap="middle">
-        {/* <Row align="middle" justify={isActive ? "end" : "center"} gutter={16}> */}
         {upperRow.map((value) => (
           <Shape shape={value} key={value} clickShape={clickShape} />
         ))}
-        {/* </Row> */}
       </Flex>
       <Flex align="middle" justify={isActive ? "center" : "end"} gap="middle">
-        {/* <Row align="middle" justify={isActive ? "center" : "end"} gutter={16}> */}
         {lowerRow.map((value) => (
           <Shape shape={value} key={value} clickShape={clickShape} />
         ))}
-        {/* </Row> */}
       </Flex>
     </Flex>
   );

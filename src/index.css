@@ -19,7 +19,6 @@ button:active {
 }
 .movePosition {
   color: white;
-  /* content: "Move position"; */
   background-color: #6eda78;
   font-size: 14px;
   display: inline-block;
@@ -31,7 +30,6 @@ button:active {
 }
 .moveshape {
   color: white;
-  /* content: "Move shape"; */
   background-color: #6eda78;
   font-size: 14px;
   display: inline-block;

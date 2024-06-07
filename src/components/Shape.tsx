@@ -1,5 +1,3 @@
-// import { Col } from "antd";
-
 function Shape({
   shape,
   clickShape,
@@ -8,7 +6,6 @@ function Shape({
   clickShape: () => void;
 }) {
   return (
-    // <Col>
     <button
       className="single"
       type="button"
@@ -17,7 +14,6 @@ function Shape({
     >
       <div className={`${shape} shape center`}></div>
     </button>
-    // </Col>
   );
 }
 

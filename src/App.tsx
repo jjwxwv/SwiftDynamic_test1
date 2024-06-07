@@ -14,10 +14,6 @@ const data = [
   "rectangle",
   "parallelogram",
 ];
-// const options: SelectProps["options"] = [
-//   { value: 1, label: "EN" },
-//   { value: 2, label: "TH" },
-// ];
 function shuffleItem(array: string[]) {
   const newArr = Array.from(array);
   newArr.forEach((_, i) => {
