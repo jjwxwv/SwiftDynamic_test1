@@ -16,10 +16,7 @@ const data = [
 ];
 function shuffleItem(array: string[]) {
   const newArr = Array.from(array);
-  newArr.forEach((_, i) => {
-    const randomNum = Math.floor(Math.random() * (i + 1));
-    [newArr[i], newArr[randomNum]] = [newArr[randomNum], newArr[i]];
-  });
+  newArr.sort(() => 0.5 - Math.random());
   return newArr;
 }
 function App() {
