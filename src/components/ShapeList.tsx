@@ -10,8 +10,8 @@ function ShapeList({
   isActive: boolean;
   clickShape: () => void;
 }) {
-  const upperRow = [shape[0], shape[1], shape[2]];
-  const lowerRow = [shape[3], shape[4], shape[5]];
+  const upperRow = shape.slice(0, Math.floor(shape.length / 2));
+  const lowerRow = shape.slice(Math.floor(shape.length / 2));
   return (
     <Flex vertical gap="middle">
       <Flex align="middle" justify={isActive ? "end" : "center"} gap="middle">
